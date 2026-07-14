@@ -1,0 +1,116 @@
+{
+  "theme": {
+    "mode": "light",
+    "description": "Premium Light Theme with glassmorphism, soft gradients, and rounded cards. Inspired by the structure of Linear and Arc but infused with a warm, elegant pastel palette."
+  },
+  "colors": {
+    "primary": {
+      "coral": "hsl(16, 100%, 66%)",
+      "peach": "hsl(28, 100%, 86%)",
+      "cream": "hsl(40, 33%, 98%)"
+    },
+    "secondary": {
+      "lavender": "hsl(240, 67%, 94%)",
+      "sage_green": "hsl(95, 29%, 63%)"
+    },
+    "accent": {
+      "rose_pink": "hsl(320, 100%, 70%)",
+      "gold": "hsl(51, 100%, 50%)"
+    },
+    "background": "hsl(48, 30%, 98%)",
+    "foreground": "hsl(0, 0%, 11%)",
+    "card": "hsl(0, 0%, 100%)"
+  },
+  "typography": {
+    "headings": {
+      "fontFamily": "Outfit, sans-serif",
+      "weight": "font-semibold to font-black",
+      "tracking": "tracking-tight"
+    },
+    "body": {
+      "fontFamily": "Manrope, sans-serif",
+      "weight": "font-normal to font-medium"
+    },
+    "rules": [
+      "No Inter or generic fonts for headings.",
+      "Headings must use tight letter spacing.",
+      "Overlines and labels must be uppercase, tiny, and wide tracking.",
+      "Max heading size text-6xl for hero."
+    ]
+  },
+  "visual_enhancers": {
+    "glassmorphism": [
+      "Use for sticky headers, floating navs, and elevated cards.",
+      "Class pattern: bg-white/70 backdrop-blur-xl border border-white/40 shadow-sm.",
+      "Ensure backdrop-saturate-150 is applied if supported."
+    ],
+    "shadows": [
+      "Soft, diffuse ambient shadows. shadow-[0_8px_32px_rgba(0,0,0,0.04)]",
+      "Layered shadows for depth."
+    ],
+    "gradients": [
+      "Soft mesh gradients using primary and secondary colors as background blobs.",
+      "Subtle gradient text for accentuating key words like 'AI Career Copilot'."
+    ]
+  },
+  "layouts": {
+    "dashboard": "Sidebar (left) + Navbar (top) layout. Dashboard cards should have a subtle border-radius (lg or xl) and generous padding (p-6).",
+    "landing_page": "Hero section centered or staggered with 3D abstract shapes floating. High white space. Generous padding (py-24 or py-32). Bento grid for features.",
+    "spacing": "Generous spacing. Use p-6, p-8 for cards. gap-6, gap-8 for grids."
+  },
+  "components": {
+    "cards": "Soft-glass cards with delicate 1px border. Avoid standard rigid cards.",
+    "buttons": "Pill-shaped (rounded-full) or smooth rounded (rounded-xl) with interaction animations (hover:scale-105 transition-transform). Coral or Peach for primary CTA.",
+    "navigation": "Visible desktop navigation. Glassmorphism header over scrolling content.",
+    "toasts": "Use sonner for notifications."
+  },
+  "motion": {
+    "interactions": "Hover states (translate-y-1, subtle shadow increase). Click/press states. Entrance animations for dashboard cards (staggered fade-up).",
+    "transitions": "Use specific properties: transition-transform, transition-opacity, transition-colors. Do NOT use transition-all."
+  },
+  "media": {
+    "3d_libraries": [
+      "Framer Motion for entrance and hover animations.",
+      "Optional: Spline for a hero 3D pastel object if interactive, else use the provided static abstract images."
+    ],
+    "icons": "lucide-react or @phosphor-icons/react for soft, modern rounded icons matching the pastel aesthetic."
+  },
+  "image_urls": [
+    {
+      "url": "https://images.unsplash.com/photo-1543269664-02e941c052f7?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAxODF8MHwxfHNlYXJjaHw0fHxzdHVkZW50JTIwc21pbGluZyUyMGxhcHRvcCUyMG1vZGVybnxlbnwwfHx8fDE3ODM3Nzk3OTh8MA&ixlib=rb-4.1.0&q=85",
+      "description": "Student working on laptop for the landing page hero or feature section",
+      "category": "landing_page"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1612299273045-362a39972259?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAxODF8MHwxfHNlYXJjaHwxfHxzdHVkZW50JTIwc21pbGluZyUyMGxhcHRvcCUyMG1vZGVybnxlbnwwfHx8fDE3ODM3Nzk3OTh8MA&ixlib=rb-4.1.0&q=85",
+      "description": "Student avatar / dashboard user profile picture",
+      "category": "dashboard_avatar"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1622547748225-3fc4abd2cca0?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1ODF8MHwxfHNlYXJjaHwxfHxhYnN0cmFjdCUyMHBhc3RlbCUyMDNkJTIwZ2VvbWV0cmljJTIwc2hhcGVzfGVufDB8fHx8MTc4Mzc3OTc5OHww&ixlib=rb-4.1.0&q=85",
+      "description": "Abstract 3D pastel shapes for background floating elements",
+      "category": "decoration"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1654277041218-84424c78f0ae?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA0MTJ8MHwxfHNlYXJjaHwzfHx0ZWNoJTIwY29tcGFueSUyMGxvZ28lMjBpc29sYXRlZHxlbnwwfHx8fDE3ODM3Nzk3OTd8MA&ixlib=rb-4.1.0&q=85",
+      "description": "GitHub Logo for GitHub Intelligence Integration",
+      "category": "integration_logo"
+    }
+  ],
+  "accessibility": [
+    "Ensure contrast ratio is maintained, especially on light pastel backgrounds.",
+    "Never use purely transparent backgrounds on text overlays.",
+    "Add data-testid attributes to all interactive elements."
+  ],
+  "instructions_to_main_agent": "Implement a premium light theme SaaS interface. Avoid standard Vercel dark mode or default templates. Create soft glassmorphic cards (bg-white/70, backdrop-blur-lg, delicate border). Apply generous spacing (p-6, gap-8). Use 'Outfit' for striking headlines and 'Manrope' for readable body text. Implement Sidebar + Top Navbar layout for the dashboard. Strictly follow the provided color palette (Coral, Peach, Cream, Lavender, Sage Green). All interactive and key informational elements MUST include a data-testid attribute.",
+  "UNIVERSAL_GUIDELINES_FOR_MAIN_AGENT": [
+    "Do not apply universal transition (transition: all). Use specific properties.",
+    "Do not center align the app container (.App { text-align: center; }).",
+    "Use modern pill-shaped or smoothly rounded buttons with explicit hover states.",
+    "NEVER use AI assistant Emoji characters for icons.",
+    "Use 2-3x more spacing than default.",
+    "Use layered design elements with z-index hierarchy and glassmorphism.",
+    "Prioritize existing components from src/components/ui.",
+    "Use sonner for toast notifications."
+  ]
+}
