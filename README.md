@@ -241,20 +241,6 @@ npm run build
 - Application Deadline Reminders
 - Resume ATS Score Checker
 
----
-
-## 📸 Screenshots
-
-### Dashboard
-_Add dashboard screenshot here_
-
-### Opportunity Discovery
-_Add opportunity discovery screenshot here_
-
-### Resume Analysis
-_Add resume analysis screenshot here_
-
----
 
 ## 🎯 Project Vision
 
@@ -280,5 +266,3 @@ Contributions are welcome.
 This project is intended for educational and portfolio purposes.
 
 ---
-
-### Made with ❤️ using MERN Stack and Google Gemini AI
