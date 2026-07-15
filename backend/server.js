@@ -9,7 +9,8 @@ const connectDB = require("./config/db");
 const { seedOpportunities } = require("./seed");
 
 const app = express();
-const PORT = process.env.NODE_PORT || 8002;
+// const PORT = process.env.NODE_PORT || 8002;
+const PORT = process.env.PORT || process.env.NODE_PORT || 8002;
 
 app.use(cors({ origin: (process.env.CORS_ORIGINS || "*").split(","), credentials: true }));
 app.use(express.json({ limit: "10mb" }));
